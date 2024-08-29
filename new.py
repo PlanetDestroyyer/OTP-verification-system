@@ -52,7 +52,7 @@ if st.button("Send OTP"):
             s.starttls()
 
             # Replace 'your_gmail_account@gmail.com' and 'your_app_password' with your actual Gmail account and app password
-            s.login('wrieddude@gmail.com', 'hgedchkacmkgbtxm')
+            s.login('wrieddude@gmail.com', 'password')
             s.sendmail(sender_mail, receivers_mail, message)
             s.quit()
             st.write("Successfully sent email")
